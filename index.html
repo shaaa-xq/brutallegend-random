@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- first page -->
+    <main id="main-content">
+      <header>
+        <h3>BRUTAL LEGENDS RANDOM CHARACTER GENERATOR</h3>
+      </header>
+
+      <div class="game-container">
+        <div class="form-container">
+          <input type="text" placeholder="warden" id="name-input" />
+          <div class="error-container" id="error">Harap mengisi bidang ini.</div>
+          <button id="input-btn">Input</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- loader -->
+    <div class="loader display-false" id="loader"></div>
+
+    <!-- result -->
+    <div class="result-page display-false" id="result-page">
+      <div class="result-box">
+        <h3 style="text-align: center">Karaktermu di Brutal Legends adalah</h3>
+        <div class="img-result">
+          <img id="image" loading="lazy" />
+        </div>
+        <h3 style="text-align: center" id="charaname-box"></h3>
+      </div>
+      <button id="restart-btn">Coba Lagi</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
