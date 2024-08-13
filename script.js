@@ -51,7 +51,7 @@ const bl = [
   "Yama",
   "Zani",
 ];
-const inputBtn = document.getElementById("input-btn");
+const startBtn = document.getElementById("generate-btn");
 const loader = document.getElementById("loader");
 const mainContent = document.getElementById("main-content");
 const resultPage = document.getElementById("result-page");
@@ -76,7 +76,7 @@ const isClick = () => {
     mainContent.classList.add("display-false");
     resultPage.classList.remove("display-false");
     randomCharacter();
-  }, 2000);
+  }, 5000);
 };
 
 // restart
@@ -85,5 +85,5 @@ const restartGame = () => {
   mainContent.classList.remove("display-false");
 };
 
-inputBtn.addEventListener("click", isClick);
+startBtn.addEventListener("click", isClick);
 restartBtn.addEventListener("click", restartGame);
